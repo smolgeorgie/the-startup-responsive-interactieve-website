@@ -1,0 +1,139 @@
+:root {
+    --nav-sizing: 1.5em;
+    --nav-text-size: .7em;
+    --nav-text-color: white;
+    --icon-size: 20px;
+    --font-size-paragraph: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* #region NAVBAR */
+
+nav {
+    background-color: orange;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 3.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+
+    &:hover {
+        background-color: orangered;
+    }
+}
+
+li img {
+    width: var(--nav-sizing);
+    height: var(--nav-sizing);
+}
+
+li span {
+    font-size: var(--nav-text-size);
+    color: var(--nav-text-color);
+}
+
+li img[alt="funda-logo"] {
+    width: 110px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* #endregion NAVBAR */
+
+.image-stacks__main {
+    position: relative;
+    display: inline-block;
+}
+
+.image-stacks__main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.icon-container .fa-share-alt {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: var(--icon-size);
+
+    &:hover {
+        color: darkblue;
+    }
+}
+
+.icon-container .fa-heart-o {
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: var(--icon-size);
+}
+
+.image-stacks__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image-stacks__photo, .image-stacks__video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 5em;
+    object-fit: cover;
+    box-sizing: border-box;
+    flex: 1 0 20vw; 
+    max-width: 100%;
+    padding: 7px 8px 7px 8px;
+    border-bottom: 5px grey;
+}
+
+.image-stacks__photo img, .image-stacks__video img {
+    width: 100%;
+    height: 4.5em;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-stacks__video .fa-play-circle, .image-stacks__photo .fa-file-image-o {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    size: var(--icon-size);
+}
+
+.image-stacks__photo span, .image-stacks__video span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39aeed;
+    font-size: var(--font-size-paragraph);
+    padding: 5px 0 0 0;
+}

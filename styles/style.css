@@ -4,6 +4,8 @@
     --nav-text-color: white;
     --icon-size: 20px;
     --font-size-paragraph: 16px;
+    --font-size-heading: 23px;
+    --font-color-heading: #494949;
 }
 
 body{
@@ -60,6 +62,7 @@ li img[alt="funda-logo"] {
 
 /* #endregion NAVBAR */
 
+/* #region IMAGE STACKS */
 .image-stacks__main {
     position: relative;
     display: inline-block;
@@ -136,4 +139,10 @@ li img[alt="funda-logo"] {
     color: #39aeed;
     font-size: var(--font-size-paragraph);
     padding: 5px 0 0 0;
+}
+/* #endregion IMAGE STACKS */
+
+h1 {
+    font-size: var(--font-size-heading);
+    color: var(--font-color-heading);
 }

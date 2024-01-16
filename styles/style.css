@@ -113,7 +113,7 @@ li img[alt="funda-logo"] {
     flex: 1 0 20vw; 
     max-width: 100%;
     padding: 7px 8px 7px 8px;
-    border-bottom: 5px grey;
+    margin: 0 0 1em 0;
 }
 
 .image-stacks__photo img, .image-stacks__video img {
@@ -145,4 +145,49 @@ li img[alt="funda-logo"] {
 h1 {
     font-size: var(--font-size-heading);
     color: var(--font-color-heading);
+}
+
+.object-primary__details {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    border-top: 1px lightgray solid;
+    margin: 1em 0 0 .7em;
+}
+
+.object-primary__details .map-button {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 6em;
+    border-radius: 15px;
+    background-color: orange;
+    top: 40%;
+    left: 80%;
+    gap: 5px;
+}
+
+.object-primary__details .map-button__icon {
+    height: 4em;
+    width: 4em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.object-primary__details .map-button img {
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition-duration: .5s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.object-primary__details .map-button span {
+    font-size: 10px;
 }

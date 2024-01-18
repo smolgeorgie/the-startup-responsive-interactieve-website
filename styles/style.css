@@ -286,7 +286,7 @@ h2 {
 .readmore {
     display: flex;
     flex-direction: column;
-    margin: 1em 0 0 0;
+    margin: 1em 0 0 1em;
     width: 350px;
     background-color: transparent;
     max-height: 120px;
@@ -297,33 +297,35 @@ h2 {
     max-height: 999px;
     transition: all 0.5s ease;
   }
+  
   .readmore-link {
-    position: absolute;
-    /* bottom: 1em;
-    right: 0; */
-    margin: 0;
-    background-color: -moz-linear-gradient(top, transparent, white);
-    background-color: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, transparent),
-      color-stop(1, #eeee);
-      
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-      font-size: 0.6em;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 5px 10px;
-      border-radius: 20px;
-      opacity: 0.6;
-      transition: all 0.25s ease;
-      &:hover {
-        opacity: 1;
-      }
+     position: absolute;
+     /* bottom: 1em;
+     right: 0; */
+     margin: 0 0 0 .5em;
+     background-color: -moz-linear-gradient(top, transparent, white);
+     background-color: -webkit-gradient(
+     linear,
+     left top,
+     left bottom,
+     color-stop(0, transparent),
+     color-stop(1, #eeee));
+
+        & a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        opacity: 0.6;
+        transition: all 0.25s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+        }
     }
-  }
 }
 

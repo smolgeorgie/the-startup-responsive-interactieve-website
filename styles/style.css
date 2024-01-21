@@ -248,8 +248,8 @@ h2 {
     height: 6em;
     border-radius: 15px;
     background-color: orange;
-    top: 40%;
-    left: 80%;
+    top: 25%;
+    left: 75%;
     gap: 5px;
 }
 
@@ -262,7 +262,7 @@ h2 {
 
 .object-primary__details .map-button img {
     display: block;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 10px;
     transition-duration: .5s;
 

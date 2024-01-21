@@ -14,6 +14,6 @@ for (var i = 0; i < readmore.length; i++) {
   };
 }
 
-document.addEventListener('contextmenu', (event) => {
+document.querySelector('.map-button').addEventListener('contextmenu', (event) => {
   event.preventDefault();
 });

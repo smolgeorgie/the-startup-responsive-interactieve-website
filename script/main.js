@@ -1,21 +1,14 @@
 var readmore = document.querySelectorAll(".readmore-link a");
 
 for (var i = 0; i < readmore.length; i++) {
-  var el = readmore[i];
-  el.onclick = function() {
+  readmore[i].onclick = function() {
     
-    let readmoreContainer = el.closest("article");
+    let readmoreContainer = this.closest("article");
     readmoreContainer.classList.toggle("open");
     
-    let lable = (el.innerHTML === "+ Lees de volledige beschrijving") ? "Lees minder beschrijving" : " + Lees meer beschrijving";
-    el.innerHTML = lable;
+    let lable = (this.innerHTML === "+ Lees de volledige beschrijving") ? "Lees minder beschrijving" : " + Lees meer beschrijving";
+    this.innerHTML = lable;
     
     return false;
   };
 }
-
-document.querySelectorAll('.map-button').forEach((button) => {
-  button.addEventListener('contextmenu', (event) => {
-    event.preventDefault();
-  });
-});

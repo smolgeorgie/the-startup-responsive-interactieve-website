@@ -211,6 +211,9 @@ h2 {
 }
 
 .object-primary__calculator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: var(--link-color);
     font-size: var(--font-size-paragraph);
     cursor: pointer;
@@ -218,15 +221,16 @@ h2 {
     font-size: 15px;
     border-bottom: 1px lightgray solid;
 
+    & figure svg {
+        height: 1.5em;
+        width: 1.5em;
+        fill: grey;
+    }
+
     & a {
         text-decoration: none;
         color: var(--link-color);
         font-weight: var(--link-weight);
-    }
-
-    & i {
-        font-size: var(--icon-size);
-        margin: 0 0 1.5em .5em;
     }
 }
 

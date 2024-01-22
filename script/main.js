@@ -6,8 +6,11 @@ for (var i = 0; i < readmore.length; i++) {
     let readmoreContainer = this.closest("article");
     readmoreContainer.classList.toggle("open");
     
-    let lable = (this.innerHTML === "+ Lees de volledige beschrijving") ? "Lees minder beschrijving" : " + Lees meer beschrijving";
-    this.innerHTML = lable;
+    if (readmoreContainer.classList.contains("open")) {
+      this.innerHTML = "+ Voor meer informatie";
+    } else {
+      this.innerHTML = "- Voor minder informatie";
+    }
     
     return false;
   };

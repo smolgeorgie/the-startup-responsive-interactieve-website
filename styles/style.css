@@ -2,7 +2,8 @@
     --nav-sizing: 1.5em;
     --nav-text-size: .7em;
     --nav-text-color: white;
-    --icon-size: 20px;
+    --icon-image-size: 20px;
+    --icon-svg-size: 2em;
     --font-size-paragraph: 14px;
     --font-size-heading: 22px;
     --font-size-subheading: 18px;
@@ -190,10 +191,10 @@ h1 {
     justify-content: center;
     gap: .5em;
 
-    & img {
-    width: var(--icon-size);
-    height: var(--icon-size);
-    object-fit: cover;
+    & svg {
+    width: var(--icon-svg-size);
+    height: var(--icon-svg-size);
+    fill: grey;
     }   
 
     & span {

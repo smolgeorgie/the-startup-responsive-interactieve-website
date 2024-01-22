@@ -10,7 +10,7 @@ window.onload = function() {
     }
 
     buttons[i].addEventListener('click', function() {
-      var article = this.closest('.readmore'); // Use closest to find the parent article
+      var article = this.closest('.readmore');
       var paragraphs = article.querySelectorAll('p');
       
       if (this.textContent === 'Read more') {

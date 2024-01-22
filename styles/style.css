@@ -260,10 +260,10 @@ h2 {
     overflow: hidden;
 }
 
-.object-primary__details .map-button img {
-    width: 5em;
-    height: 5em;
-    display: block;
+.object-primary__details .map-button iframe {
+    width: 4em;
+    height: 4em;
+    display: cover;
     object-fit: fill;
     border-radius: 10px;
     transition-duration: .5s;

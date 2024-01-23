@@ -78,7 +78,7 @@ nav ul li {
 }
 
 .image-stacks__main img {
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-fit: cover;
 }
@@ -359,3 +359,31 @@ h2 {
     }
 }
 
+/* #endregion OBJECT DESCRIPTION */
+
+@media (min-width: 700px) {
+
+    .image-stacks__container {
+        display: flex;
+        width: 10em;
+        height: 5em;
+    }
+    
+    .image-stacks__photo, .image-stacks__video {
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+    }
+    
+    .image-stacks__video img, .image-stacks__photo img {
+        display: none;
+    }
+    
+    .image-stacks__video span, .image-stacks__photo span {
+        font-size: 18px;
+    }
+    
+    .image-stacks__video i, .image-stacks__photo i {
+        background-color: red;
+    }
+}

@@ -350,11 +350,12 @@ h2 {
     .toggle {
         border: none;
         background: transparent;
-        margin: 0 0 0 .5em;
+        margin: 0 0 0 .5em; 
         padding: 0;
         cursor: pointer;
         outline: inherit;
-        color: var(--link-color)
-      }
+        color: var(--link-color);
+        text-align: left;
+    }
 }
 

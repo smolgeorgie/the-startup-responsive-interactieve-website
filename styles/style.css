@@ -243,6 +243,8 @@ h2 {
     margin: 1em 0 0 .7em;
 }
 
+
+/* DOESNT WORK PROPERLY YET */
 .object-primary__details .map-button {
     position: absolute;
     display: flex;

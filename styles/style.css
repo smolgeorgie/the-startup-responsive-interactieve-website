@@ -36,9 +36,10 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
     height: 3.5em;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -61,12 +62,29 @@ nav ul li {
     color: var(--nav-text-color);
 }
 
-    & img[alt="funda-logo"] {
-    width: 110px;
-    height: 50px;
+    & img[alt="funda icoon"] {
+    width: 10em;
+    height: 2em;
     object-fit: cover;
 }
+}
 
+.left-navbar, .right-navbar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.right-navbar {
+    margin: 0 -2em 0 0;
+}
+
+.right-navbar img {
+    margin: 0 0 0 1em;
+}
+
+.left-navbar {
+    margin: 0 0 0 -4em;
 }
 
 /* #endregion NAVBAR */
@@ -341,6 +359,10 @@ h2 {
 
 @media (min-width: 700px) {
 
+    main {
+        overflow: auto;
+    }
+
     .image-stacks__container {
         display: flex;
         width: 10em;
@@ -378,5 +400,72 @@ h2 {
     .readmore {
         width: 600px;
         margin: 0;
+    }
+}
+
+@media (min-width: 900px) {
+
+    main {
+        min-height: 100vh;
+    }
+    
+    .object-primary {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        height: 50vh;
+        margin-top: 20em;
+    }
+    
+    .image-stacks {
+        display: flex;
+        width: 120%;
+        height: 90%;
+    }
+
+    .image-stacks__main {
+        width: 150%;
+        margin: .5em 0 .5em 0;
+    }
+    
+    .image-stacks__main img,
+    .image-stacks__video img,
+    .image-stacks__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .image-stacks__video, .image-stacks__photo {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .image-stacks__container {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+    }
+    
+    .image-stacks__video svg,
+    .image-stacks__photo svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        fill: white;
+        width: var(--icon-svg-size);
+        height: var(--icon-svg-size);
+    }
+
+
+    .image-stacks__photo span, .image-stacks__video span {
+        display: none;
     }
 }

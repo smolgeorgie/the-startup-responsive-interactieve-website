@@ -13,16 +13,16 @@ window.onload = function() {
       var article = this.closest('.readmore');
       var paragraphs = article.querySelectorAll('p');
       
-      if (this.textContent === 'Read more') {
+      if (this.textContent === '+ Lees meer beschrijving') {
         for (var j = 1; j < paragraphs.length; j++) {
           paragraphs[j].style.display = 'block';
         }
-        this.textContent = 'Read less';
+        this.textContent = '- Lees minder beschrijving';
       } else {
         for (var j = 1; j < paragraphs.length; j++) {
           paragraphs[j].style.display = 'none';
         }
-        this.textContent = 'Read more';
+        this.textContent = '+ Lees meer beschrijving';
       }
     });
   }

@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function () {
   var articles = document.querySelectorAll('.readmore');
   var buttons = document.querySelectorAll('.toggle');
 
@@ -9,10 +9,10 @@ window.onload = function() {
       paragraphs[j].style.display = 'none';
     }
 
-    buttons[i].addEventListener('click', function() {
+    buttons[i].addEventListener('click', function () {
       var article = this.closest('.readmore');
       var paragraphs = article.querySelectorAll('p');
-      
+
       if (this.textContent === '+ Lees meer beschrijving') {
         for (var j = 1; j < paragraphs.length; j++) {
           paragraphs[j].style.display = 'block';
@@ -26,4 +26,4 @@ window.onload = function() {
       }
     });
   }
-}
+});
